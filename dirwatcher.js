@@ -14,7 +14,7 @@ class DirWatcher extends EventEmitter {
   watch(folderPath, delay) {
     setInterval(async() => {
       try {
-        let stats = await stat(folderPath);
+        const stats = await stat(folderPath);
 
         if (stats.isDirectory()) {
           const files = await readdir(folderPath);
@@ -42,4 +42,4 @@ class DirWatcher extends EventEmitter {
   }
 }
 
-export default new DirWatcher();
+export default DirWatcher;

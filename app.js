@@ -1,10 +1,12 @@
 import { name } from './config';
 import * as models from './models';
-import dirWatcher from './dirwatcher';
+import DirWatcher from './dirwatcher';
 import Importer from './importer';
 
+const dirWatcher = new DirWatcher();
 dirWatcher.watch('./data', 2000);
-const importer = new Importer();
+const importer = new Importer(dirWatcher);
+importer.run();
 
 console.log(`App name: ${name}`);
 
