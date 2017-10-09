@@ -2,9 +2,9 @@
   "id": "1",
   "name": "regadenoson",
   "brand": "Lexiscan",
-  "company": "\"Astellas Pharma US",
-  "price": " Inc.\"",
-  "isbn": "$15.39"
+  "company": "\"Astellas Pharma US, Inc.\"",
+  "price": "$15.39",
+  "isbn": "329677979-5"
 },
 {
   "id": "2",
@@ -18,17 +18,17 @@
   "id": "3",
   "name": "Acetaminophen",
   "brand": "TYLENOL EXTRA STRENGTH",
-  "company": "\"Lil' Drug Store Products",
-  "price": " Inc.\"",
-  "isbn": "$47.63"
+  "company": "\"Lil' Drug Store Products, Inc.\"",
+  "price": "$47.63",
+  "isbn": "172532785-6"
 },
 {
   "id": "4",
   "name": "Naproxen Sodium",
   "brand": "Naproxen Sodium",
-  "company": "\"Northwind Pharmaceuticals",
-  "price": " LLC\"",
-  "isbn": "$4.33"
+  "company": "\"Northwind Pharmaceuticals, LLC\"",
+  "price": "$4.33",
+  "isbn": "318407597-4"
 },
 {
   "id": "5",
@@ -40,11 +40,11 @@
 },
 {
   "id": "6",
-  "name": "\"Leucine",
-  "brand": " Phenylalanine",
-  "company": " Lysine",
-  "price": " Methionine",
-  "isbn": " Isoleucine"
+  "name": "\"Leucine, Phenylalanine, Lysine, Methionine, Isoleucine, Valine, Histidine, Threonine, Tryptophan, Alanine, Glycine, Arginine, Proline, Serine, Tyrosine, Dextrose\"",
+  "brand": "CLINIMIX",
+  "company": "Baxter Healthcare Corporation",
+  "price": "$45.76",
+  "isbn": "758686558-2"
 },
 {
   "id": "7",
@@ -64,35 +64,35 @@
 },
 {
   "id": "9",
-  "name": "\"ACETAMINOPHEN",
-  "brand": " CHLORPHENIRAMINE MALEATE",
-  "company": " DEXTROMETHORPHAN HYDROBROMIDE\"",
-  "price": "Childrens Plus Cough and Runny Nose",
-  "isbn": "Dollar General"
+  "name": "\"ACETAMINOPHEN, CHLORPHENIRAMINE MALEATE, DEXTROMETHORPHAN HYDROBROMIDE\"",
+  "brand": "Childrens Plus Cough and Runny Nose",
+  "company": "Dollar General",
+  "price": "$37.82",
+  "isbn": "709927959-9"
 },
 {
   "id": "10",
-  "name": "\"Aralia Quinquefolia",
-  "brand": " Ginkgo Biloba",
-  "company": " Hydrocotyle Asiatica",
-  "price": " Brain",
-  "isbn": " Hypothalamus"
+  "name": "\"Aralia Quinquefolia, Ginkgo Biloba, Hydrocotyle Asiatica, Brain, Hypothalamus, Pituitaria Glandula, Phosphorus, Silicea\"",
+  "brand": "Hypothalmupar",
+  "company": "\"Energique, Inc.\"",
+  "price": "$1.35",
+  "isbn": "268344130-4"
 },
 {
   "id": "11",
-  "name": "\"Aesculus hippocastanum",
-  "brand": " Arnica montana",
-  "company": " Calcarea fluorica",
-  "price": " Carduus marianus",
-  "isbn": " Carbo vegetabilis"
+  "name": "\"Aesculus hippocastanum, Arnica montana, Calcarea fluorica, Carduus marianus, Carbo vegetabilis, Collinsonia canadensis, Echinacea purpurea, Hamamelis virginiana, Lachesis mutus, Pulsatilla, Secale cornutum\"",
+  "brand": "VaricoGo",
+  "company": "\"Native Remedies, LLC\"",
+  "price": "$35.45",
+  "isbn": "304585309-9"
 },
 {
   "id": "12",
   "name": "Octinoxate and Titanium dioxide",
   "brand": "CLE DE PEAU BEAUTE SILKY FOUNDATION I",
-  "company": "\"SHISEIDO CO.",
-  "price": " LTD.\"",
-  "isbn": "$48.70"
+  "company": "\"SHISEIDO CO., LTD.\"",
+  "price": "$48.70",
+  "isbn": "008122393-5"
 },
 {
   "id": "13",
@@ -106,9 +106,9 @@
   "id": "14",
   "name": "metformin hydrochloride",
   "brand": "Metformin Hydrochloride",
-  "company": "\"Physicians Total Care",
-  "price": " Inc.\"",
-  "isbn": "$22.98"
+  "company": "\"Physicians Total Care, Inc.\"",
+  "price": "$22.98",
+  "isbn": "078958423-9"
 },
 {
   "id": "15",
@@ -122,9 +122,9 @@
   "id": "16",
   "name": "Dipyridamole",
   "brand": "Dipyridamole",
-  "company": "\"General Injectables & Vaccines",
-  "price": " Inc\"",
-  "isbn": "$33.79"
+  "company": "\"General Injectables & Vaccines, Inc\"",
+  "price": "$33.79",
+  "isbn": "877503933-8"
 },
 {
   "id": "17",
@@ -146,25 +146,25 @@
   "id": "19",
   "name": "Corn Grain",
   "brand": "Corn Grain",
-  "company": "\"Nelco Laboratories",
-  "price": " Inc.\"",
-  "isbn": "$32.20"
+  "company": "\"Nelco Laboratories, Inc.\"",
+  "price": "$32.20",
+  "isbn": "664424431-9"
 },
 {
   "id": "20",
-  "name": "\"MENTHOL",
-  "brand": " CAMPHOR\"",
-  "company": "BIO-ICE",
-  "price": "Electrostim Medical Services Inc. d/b/a EMSI",
-  "isbn": "$40.31"
+  "name": "\"MENTHOL, CAMPHOR\"",
+  "brand": "BIO-ICE",
+  "company": "Electrostim Medical Services Inc. d/b/a EMSI",
+  "price": "$40.31",
+  "isbn": "642235685-4"
 },
 {
   "id": "21",
   "name": "URSODIOL",
   "brand": "URSODIOL",
-  "company": "\"Rising Pharmaceuticals",
-  "price": " Inc.\"",
-  "isbn": "$15.68"
+  "company": "\"Rising Pharmaceuticals, Inc.\"",
+  "price": "$15.68",
+  "isbn": "418819322-0"
 },
 {
   "id": "22",
@@ -184,11 +184,11 @@
 },
 {
   "id": "24",
-  "name": "\"Lycopodium clavatum",
-  "brand": " Natrum muriaticum",
-  "company": " Sepia",
-  "price": " Belladonna",
-  "isbn": " Causticum"
+  "name": "\"Lycopodium clavatum, Natrum muriaticum, Sepia, Belladonna, Causticum, Phosphorus, Sulphur, 5-hydroxytryptophan, Alumina, Silicea,\"",
+  "brand": "Elevate RXS",
+  "company": "\"Deseret Biologicals, Inc.\"",
+  "price": "$37.68",
+  "isbn": "374502079-0"
 },
 {
   "id": "25",
@@ -200,11 +200,11 @@
 },
 {
   "id": "26",
-  "name": "\"cocoa butter",
-  "brand": " phenylephrine hcl\"",
-  "company": "equaline hemorrhoidal",
-  "price": "Supervalu Inc",
-  "isbn": "$49.28"
+  "name": "\"cocoa butter, phenylephrine hcl\"",
+  "brand": "equaline hemorrhoidal",
+  "company": "Supervalu Inc",
+  "price": "$49.28",
+  "isbn": "906555126-3"
 },
 {
   "id": "27",
@@ -216,11 +216,11 @@
 },
 {
   "id": "28",
-  "name": "\"Bacitracin Zinc",
-  "brand": " Neomycin Sulfate and Polymyxin B Sulfate\"",
-  "company": "Budpak Triple Antibiotic Maximum Strength",
-  "price": "Budpak Inc.",
-  "isbn": "$28.79"
+  "name": "\"Bacitracin Zinc, Neomycin Sulfate and Polymyxin B Sulfate\"",
+  "brand": "Budpak Triple Antibiotic Maximum Strength",
+  "company": "Budpak Inc.",
+  "price": "$28.79",
+  "isbn": "188698385-2"
 },
 {
   "id": "29",
@@ -232,43 +232,43 @@
 },
 {
   "id": "30",
-  "name": "\"BENZALKONIUM CHLORIDE",
-  "brand": " LIDOCAINE",
-  "company": " WATER",
-  "price": " ISOPROPYL ALCOHOL",
-  "isbn": " ASPIRIN\""
+  "name": "\"BENZALKONIUM CHLORIDE, LIDOCAINE, WATER, ISOPROPYL ALCOHOL, ASPIRIN\"",
+  "brand": "FIRST AID Contains 101 PIECES HARDCASE",
+  "company": "Genuine First Aid LLC",
+  "price": "$40.98",
+  "isbn": "441316406-7"
 },
 {
   "id": "31",
   "name": "Hydrogen Peroxide",
   "brand": "Hydrogen Peroxide",
-  "company": "\"ASSURED / DOLLAR TREE (Greenbrier International",
-  "price": " Inc.)\"",
-  "isbn": "$46.75"
+  "company": "\"ASSURED / DOLLAR TREE (Greenbrier International, Inc.)\"",
+  "price": "$46.75",
+  "isbn": "273603259-4"
 },
 {
   "id": "32",
   "name": "Naproxen",
   "brand": "Naproxen",
-  "company": "\"NCS HealthCare of KY",
-  "price": " Inc dba Vangard Labs\"",
-  "isbn": "$22.55"
+  "company": "\"NCS HealthCare of KY, Inc dba Vangard Labs\"",
+  "price": "$22.55",
+  "isbn": "135575079-2"
 },
 {
   "id": "33",
   "name": "Ethyl Alcohol",
   "brand": "Anti-bacterial Hand",
-  "company": "\"Jets",
-  "price": " Sets",
-  "isbn": " & Elephants Beauty Corp.\""
+  "company": "\"Jets, Sets, & Elephants Beauty Corp.\"",
+  "price": "$17.91",
+  "isbn": "425148859-8"
 },
 {
   "id": "34",
-  "name": "\"Vitamin C",
-  "brand": " Vitamin D",
-  "company": " Vitamine E",
-  "price": " Vitamine B6",
-  "isbn": " Folate"
+  "name": "\"Vitamin C, Vitamin D, Vitamine E, Vitamine B6, Folate, Vitamine B12, Iron, Zinc, Magnesium, Docusate Sodium, DHA\"",
+  "brand": "Folet One",
+  "company": "Pronova Corporation",
+  "price": "$13.09",
+  "isbn": "181081549-5"
 },
 {
   "id": "35",
@@ -280,19 +280,19 @@
 },
 {
   "id": "36",
-  "name": "\"Camphor",
-  "brand": " Methyl Salicylate",
-  "company": " Menthol\"",
-  "price": "Pain Relieving Po Tong Oil",
-  "isbn": "International Nature Nutraceuticals"
+  "name": "\"Camphor, Methyl Salicylate, Menthol\"",
+  "brand": "Pain Relieving Po Tong Oil",
+  "company": "International Nature Nutraceuticals",
+  "price": "$40.91",
+  "isbn": "667221144-6"
 },
 {
   "id": "37",
   "name": "Sodium Fluoride",
   "brand": "Peroxie Care Tartar Control",
-  "company": "\"Church & Dwight Co.",
-  "price": " Inc.\"",
-  "isbn": "$28.28"
+  "company": "\"Church & Dwight Co., Inc.\"",
+  "price": "$28.28",
+  "isbn": "628652711-7"
 },
 {
   "id": "38",
@@ -304,35 +304,35 @@
 },
 {
   "id": "39",
-  "name": "\"Abies canadensis",
-  "brand": " Anacardium orientale",
-  "company": " Argentum metallicum",
-  "price": " Adrenocorticotrophin",
-  "isbn": " Hypothalamus"
+  "name": "\"Abies canadensis, Anacardium orientale, Argentum metallicum, Adrenocorticotrophin, Hypothalamus, Ignatia amara, Lycopodium clavatum, Natrum phosphoricum, Phosphorus, Pituitarum posterium, Sabadilla, Staphysagria, Sulphur, Thyroidinum, Veratrum album\"",
+  "brand": "Diet Defense",
+  "company": "Ionx Holdings d/b/a HelloLife Inc.",
+  "price": "$19.27",
+  "isbn": "043559938-0"
 },
 {
   "id": "40",
   "name": "TETRAHYDROZOLINE HYDROCHLORIDE",
   "brand": "DG HEALTH ORIGINAL",
-  "company": "\"HANLIM PHARM. CO.",
-  "price": " LTD.\"",
-  "isbn": "$46.36"
+  "company": "\"HANLIM PHARM. CO., LTD.\"",
+  "price": "$46.36",
+  "isbn": "069608126-1"
 },
 {
   "id": "41",
   "name": "ALCOHOL",
   "brand": "HAND SANITIZER",
-  "company": "\"NINGBO JIANGBEI OCEAN STAR TRADING CO.",
-  "price": "LTD\"",
-  "isbn": "$43.06"
+  "company": "\"NINGBO JIANGBEI OCEAN STAR TRADING CO.,LTD\"",
+  "price": "$43.06",
+  "isbn": "874008540-6"
 },
 {
   "id": "42",
   "name": "Sodium Monofluorophosphate",
   "brand": "Rembrandt Deeply White Plus Peroxide Whitening",
-  "company": "\"Johnson & Johnson Healthcare Products",
-  "price": " Division of McNEIL-PPC",
-  "isbn": " Inc.\""
+  "company": "\"Johnson & Johnson Healthcare Products, Division of McNEIL-PPC, Inc.\"",
+  "price": "$47.46",
+  "isbn": "997115145-6"
 },
 {
   "id": "43",
@@ -344,11 +344,11 @@
 },
 {
   "id": "44",
-  "name": "\"OCTINOXATE",
-  "brand": " TITANIUM DIOXIDE",
-  "company": " OXYBENZONE\"",
-  "price": "HYDRALIFE BB CREME Enhancing Moisturizer For Immediate Beauty SPF 30",
-  "isbn": "Parfums Christian Dior"
+  "name": "\"OCTINOXATE, TITANIUM DIOXIDE, OXYBENZONE\"",
+  "brand": "HYDRALIFE BB CREME Enhancing Moisturizer For Immediate Beauty SPF 30",
+  "company": "Parfums Christian Dior",
+  "price": "$33.46",
+  "isbn": "557649191-2"
 },
 {
   "id": "45",
@@ -368,19 +368,19 @@
 },
 {
   "id": "47",
-  "name": "\"Octinoxate",
-  "brand": " Zinc Oxide\"",
-  "company": "Urban Decay Naked Skin Beauty Balm SPF 20",
-  "price": "\"Autumn Harp",
-  "isbn": " Inc.\""
+  "name": "\"Octinoxate, Zinc Oxide\"",
+  "brand": "Urban Decay Naked Skin Beauty Balm SPF 20",
+  "company": "\"Autumn Harp, Inc.\"",
+  "price": "$34.04",
+  "isbn": "250549573-4"
 },
 {
   "id": "48",
   "name": "Titanium Dioxide",
   "brand": "bareMinerals Advanced Protection SPF 20 Moisturizer",
-  "company": "\"Bare Escentuals Beauty",
-  "price": " Inc.\"",
-  "isbn": "$21.77"
+  "company": "\"Bare Escentuals Beauty, Inc.\"",
+  "price": "$21.77",
+  "isbn": "967530810-9"
 },
 {
   "id": "49",
@@ -401,10 +401,10 @@
 {
   "id": "51",
   "name": "SULFACETAMIDE SODIUM",
-  "brand": "\"Sodium Sulfacetamide",
-  "company": " Sulfur\"",
-  "price": "\"BioComp Pharma",
-  "isbn": " Inc.\""
+  "brand": "\"Sodium Sulfacetamide, Sulfur\"",
+  "company": "\"BioComp Pharma, Inc.\"",
+  "price": "$16.03",
+  "isbn": "577275356-8"
 },
 {
   "id": "52",
@@ -416,59 +416,59 @@
 },
 {
   "id": "53",
-  "name": "\"Antimonium tartaricum",
-  "brand": " Carbo vegetabilis",
-  "company": " Lung suis",
-  "price": " Mercurius corrosivus",
-  "isbn": " Quebracho"
+  "name": "\"Antimonium tartaricum, Carbo vegetabilis, Lung suis, Mercurius corrosivus, Quebracho, Sticta pulmonaria, Teucrium marum,\"",
+  "brand": "Snore Defense",
+  "company": "Liddell Laboratories",
+  "price": "$35.21",
+  "isbn": "286110824-X"
 },
 {
   "id": "54",
   "name": "NADOLOL and BENDROFLUMETHIAZIDE",
   "brand": "Nadolol and Bendroflumethiazide",
-  "company": "\"Global Pharmaceuticals",
-  "price": " Division of Impax Laboratories",
-  "isbn": " Inc.\""
+  "company": "\"Global Pharmaceuticals, Division of Impax Laboratories, Inc.\"",
+  "price": "$23.20",
+  "isbn": "707265064-4"
 },
 {
   "id": "55",
   "name": "diflorasone diacetate",
   "brand": "Diflorasone Diacetate",
-  "company": "\"E. FOUGERA & CO.",
-  "price": " A division of Fougera Pharmaceuticals Inc.\"",
-  "isbn": "$41.77"
+  "company": "\"E. FOUGERA & CO., A division of Fougera Pharmaceuticals Inc.\"",
+  "price": "$41.77",
+  "isbn": "843062226-8"
 },
 {
   "id": "56",
   "name": "Oxymorphone hydrochloride",
   "brand": "Oxymorphone hydrochloride",
-  "company": "\"Global Pharmaceuticals",
-  "price": " Division of Impax Laboratories",
-  "isbn": " Inc.\""
+  "company": "\"Global Pharmaceuticals, Division of Impax Laboratories, Inc.\"",
+  "price": "$20.54",
+  "isbn": "684787678-6"
 },
 {
   "id": "57",
-  "name": "\"Polyethylene Glycol 3350",
-  "brand": " sodium chloride",
-  "company": " sodium bicarbonate and potassium chloride\"",
-  "price": "NuLYTELY With Flavor Packs",
-  "isbn": "\"Braintree Laboratories"
+  "name": "\"Polyethylene Glycol 3350, sodium chloride, sodium bicarbonate and potassium chloride\"",
+  "brand": "NuLYTELY With Flavor Packs",
+  "company": "\"Braintree Laboratories, Inc.\"",
+  "price": "$9.69",
+  "isbn": "647722779-7"
 },
 {
   "id": "58",
   "name": "HUMAN RHO(D) IMMUNE GLOBULIN",
   "brand": "RhoGAM Ultra-Filtered PLUS",
-  "company": "\"Kedrion Melville",
-  "price": " Inc.\"",
-  "isbn": "$8.38"
+  "company": "\"Kedrion Melville, Inc.\"",
+  "price": "$8.38",
+  "isbn": "338638301-7"
 },
 {
   "id": "59",
   "name": "Treatment Set TS344005",
   "brand": "Treatment Set TS344005",
-  "company": "\"Antigen Laboratories",
-  "price": " Inc.\"",
-  "isbn": "$37.68"
+  "company": "\"Antigen Laboratories, Inc.\"",
+  "price": "$37.68",
+  "isbn": "483820191-5"
 },
 {
   "id": "60",
@@ -490,9 +490,9 @@
   "id": "62",
   "name": "LIDOCAINE HYDROCHLORIDE",
   "brand": "Xylocaine",
-  "company": "\"APP Pharmaceuticals",
-  "price": " LLC\"",
-  "isbn": "$3.00"
+  "company": "\"APP Pharmaceuticals, LLC\"",
+  "price": "$3.00",
+  "isbn": "620278096-7"
 },
 {
   "id": "63",
@@ -512,27 +512,27 @@
 },
 {
   "id": "65",
-  "name": "\"Octinoxate",
-  "brand": " Octisalate\"",
-  "company": "Rimmel London",
-  "price": "Lancaster S.A.M.",
-  "isbn": "$27.40"
+  "name": "\"Octinoxate, Octisalate\"",
+  "brand": "Rimmel London",
+  "company": "Lancaster S.A.M.",
+  "price": "$27.40",
+  "isbn": "800595236-8"
 },
 {
   "id": "66",
   "name": "minoxidil",
   "brand": "MINOXIDIL",
-  "company": "\"Physicians Total Care",
-  "price": " Inc.\"",
-  "isbn": "$38.33"
+  "company": "\"Physicians Total Care, Inc.\"",
+  "price": "$38.33",
+  "isbn": "728258049-9"
 },
 {
   "id": "67",
-  "name": "\"PLANTAGO SEED",
-  "brand": " SENNOSIDES\"",
-  "company": "Konsyl Overnight Relief Senna Prompt",
-  "price": "\"Konsyl Pharmaceuticals",
-  "isbn": " Inc.\""
+  "name": "\"PLANTAGO SEED, SENNOSIDES\"",
+  "brand": "Konsyl Overnight Relief Senna Prompt",
+  "company": "\"Konsyl Pharmaceuticals, Inc.\"",
+  "price": "$39.62",
+  "isbn": "476018732-4"
 },
 {
   "id": "68",
@@ -544,11 +544,11 @@
 },
 {
   "id": "69",
-  "name": "\"Loratadine",
-  "brand": " Pseudoephedrine\"",
-  "company": "wal itin d",
-  "price": "Walgreen Company",
-  "isbn": "$23.58"
+  "name": "\"Loratadine, Pseudoephedrine\"",
+  "brand": "wal itin d",
+  "company": "Walgreen Company",
+  "price": "$23.58",
+  "isbn": "591403754-9"
 },
 {
   "id": "70",
@@ -578,9 +578,9 @@
   "id": "73",
   "name": "IBUPROFEN",
   "brand": "IBUPROFEN",
-  "company": "\"Apotheca",
-  "price": " Inc.\"",
-  "isbn": "$8.44"
+  "company": "\"Apotheca, Inc.\"",
+  "price": "$8.44",
+  "isbn": "893210699-1"
 },
 {
   "id": "74",
@@ -600,27 +600,27 @@
 },
 {
   "id": "76",
-  "name": "\"Colloidal silver",
-  "brand": "\"",
-  "company": "Colloidal Silver",
-  "price": "Apotheca Company",
-  "isbn": "$19.27"
+  "name": "\"Colloidal silver,\"",
+  "brand": "Colloidal Silver",
+  "company": "Apotheca Company",
+  "price": "$19.27",
+  "isbn": "180468632-8"
 },
 {
   "id": "77",
   "name": "RIFAXIMIN",
   "brand": "XIFAXAN",
-  "company": "\"Dispensing Solutions",
-  "price": " Inc.\"",
-  "isbn": "$42.35"
+  "company": "\"Dispensing Solutions, Inc.\"",
+  "price": "$42.35",
+  "isbn": "713362938-0"
 },
 {
   "id": "78",
   "name": "HYDROCORTISONE ACETATE",
   "brand": "Hydrocortisone Acetate",
-  "company": "\"Preferred Pharmaceuticals",
-  "price": " Inc.\"",
-  "isbn": "$24.08"
+  "company": "\"Preferred Pharmaceuticals, Inc.\"",
+  "price": "$24.08",
+  "isbn": "738822649-4"
 },
 {
   "id": "79",
@@ -648,27 +648,27 @@
 },
 {
   "id": "82",
-  "name": "\"Acetaminophen",
-  "brand": " Dextromethorphan Hydrobromide",
-  "company": " Doxylamine Succinate",
-  "price": " Pseudoephedrine Hydrochloride\"",
-  "isbn": "Topcare Nite Time D"
+  "name": "\"Acetaminophen, Dextromethorphan Hydrobromide, Doxylamine Succinate, Pseudoephedrine Hydrochloride\"",
+  "brand": "Topcare Nite Time D",
+  "company": "Topco Associates LLC",
+  "price": "$31.88",
+  "isbn": "666764537-9"
 },
 {
   "id": "83",
   "name": "ZINC OXIDE",
   "brand": "iBlanc Restora-Bright Elite Natural Sun Defense",
-  "company": "\"iBlanc",
-  "price": " Inc.\"",
-  "isbn": "$49.73"
+  "company": "\"iBlanc, Inc.\"",
+  "price": "$49.73",
+  "isbn": "073619079-1"
 },
 {
   "id": "84",
   "name": "BENZOYL PEROXIDE",
   "brand": "BP Wash Acne Treatment Pack",
-  "company": "\"CINTEX SERVICES",
-  "price": " LLC\"",
-  "isbn": "$31.80"
+  "company": "\"CINTEX SERVICES, LLC\"",
+  "price": "$31.80",
+  "isbn": "959677059-4"
 },
 {
   "id": "85",
@@ -754,9 +754,9 @@
   "id": "95",
   "name": "Mupirocin",
   "brand": "mupirocin",
-  "company": "\"H.J. Harkins Company",
-  "price": " Inc.\"",
-  "isbn": "$33.23"
+  "company": "\"H.J. Harkins Company, Inc.\"",
+  "price": "$33.23",
+  "isbn": "108954779-X"
 },
 {
   "id": "96",
@@ -776,11 +776,11 @@
 },
 {
   "id": "98",
-  "name": "\"Causticum",
-  "brand": " Chininum Sulphuricum",
-  "company": " Cinchona Officinalis",
-  "price": " Pulsatilla",
-  "isbn": " Thiosinaminum\""
+  "name": "\"Causticum, Chininum Sulphuricum, Cinchona Officinalis, Pulsatilla, Thiosinaminum\"",
+  "brand": "Type 4 Noise Max",
+  "company": "T Gone Remedies",
+  "price": "$38.53",
+  "isbn": "988487728-9"
 },
 {
   "id": "99",
@@ -794,7 +794,7 @@
   "id": "100",
   "name": "PRAMOXINE HYDROCHLORIDE",
   "brand": "Bikini Zone MEDICATED After Shave Fresh Scent",
-  "company": "\"CCA Industries",
-  "price": " Inc.\"",
-  "isbn": "$40.60"
+  "company": "\"CCA Industries, Inc.\"",
+  "price": "$40.60",
+  "isbn": "506946526-0"
 }]
