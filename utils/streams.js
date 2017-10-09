@@ -10,7 +10,7 @@ const stat = promisify(fs.stat);
 const readdir = promisify(fs.readdir);
 const cssUrl = 'https://www.epam.com/etc/clientlibs/foundation/main.min.fc69c13add6eae57cd247a91c7e26a15.css';
 
-const start = () => {
+const runUtil = () => {
 
     const argv = yargs
         .usage('npm start -- --action <action> --file <name> --path <path>')
@@ -141,4 +141,4 @@ const cssBundler = async (pathToFile) => {
     }
 };
 
-export default start;
+export default runUtil;
