@@ -8,7 +8,7 @@ class Importer {
 		this.dirwatcher = dirwatcher;
     }
 
-    run() {
+    import() {
 		this.dirwatcher.on('dirwatcher:changed', (path, file) => {
 			let lineNumber = 0;
 			const filename = file.replace(/\.csv$/, '.json');
@@ -25,7 +25,7 @@ class Importer {
 				if (lineNumber === 0) {
 					this.keys = line.split(',');
 				} else {
-					const values = line.split(',');
+					const values = line.split(/(?!\B"[^"]*),(?![^"]*"\B)/);
 
 					//parse string to obj and stringify
 					const newLine = JSON.stringify(this.keys.reduce((acc, key, i) =>
@@ -44,6 +44,23 @@ class Importer {
 				console.log(`${filename} was imported.`);
 			});
 		})
+	}
+
+	importSync() {
+        this.dirwatcher.on('dirwatcher:changed', (path, file) => {
+            const filename = file.replace(/\.csv$/, '.json');
+            const data = fs.readFileSync(path, { encoding: 'utf8' });
+            const strArray = data.split('\n');
+            const keys = strArray[0].split(',');
+
+            const transformedArray = strArray
+				.map(str =>
+					str.split(/(?!\B"[^"]*),(?![^"]*"\B)/)
+						.reduce((acc, val, i) =>
+							Object.assign(acc, { [keys[i]]: val }), {}));
+            fs.writeFileSync(`${__dirname}/json/${filename}`, JSON.stringify(transformedArray, null, 2));
+            console.log(`File transformed to json format!`);
+		});
 	}
 }
 

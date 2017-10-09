@@ -10,17 +10,17 @@
   "id": "2",
   "name": "Skin Protectant",
   "brand": "Kids Eczema Balm",
-  "company": "\"Skinfix",
-  "price": " Inc.\"",
-  "isbn": "$3.45"
+  "company": "\"Skinfix, Inc.\"",
+  "price": "$3.45",
+  "isbn": "775720992-7"
 },
 {
   "id": "3",
   "name": "SALICYLIC ACID",
   "brand": "Unagel",
-  "company": "\"Advanced Skin Technology",
-  "price": " LLC\"",
-  "isbn": "$42.06"
+  "company": "\"Advanced Skin Technology, LLC\"",
+  "price": "$42.06",
+  "isbn": "240028186-6"
 },
 {
   "id": "4",
@@ -34,9 +34,9 @@
   "id": "5",
   "name": "LAMOTRIGINE",
   "brand": "LAMOTRIGINE",
-  "company": "\"PD-Rx Pharmaceuticals",
-  "price": " Inc.\"",
-  "isbn": "$40.46"
+  "company": "\"PD-Rx Pharmaceuticals, Inc.\"",
+  "price": "$40.46",
+  "isbn": "119505990-6"
 },
 {
   "id": "6",
@@ -58,9 +58,9 @@
   "id": "8",
   "name": "Alcohol",
   "brand": "Hand Sanitizer",
-  "company": "\"Swinton Avenue Trading Ltd",
-  "price": " Inc.\"",
-  "isbn": "$39.00"
+  "company": "\"Swinton Avenue Trading Ltd, Inc.\"",
+  "price": "$39.00",
+  "isbn": "311062878-3"
 },
 {
   "id": "9",
@@ -74,9 +74,9 @@
   "id": "10",
   "name": "English Plantain",
   "brand": "English Plantain",
-  "company": "\"Nelco Laboratories",
-  "price": " Inc.\"",
-  "isbn": "$22.64"
+  "company": "\"Nelco Laboratories, Inc.\"",
+  "price": "$22.64",
+  "isbn": "473333375-7"
 },
 {
   "id": "11",
@@ -90,9 +90,9 @@
   "id": "12",
   "name": "Mineral Oil",
   "brand": "Mineral Oil",
-  "company": "\"Shopko Stores Operating Co.",
-  "price": " LLC\"",
-  "isbn": "$32.99"
+  "company": "\"Shopko Stores Operating Co., LLC\"",
+  "price": "$32.99",
+  "isbn": "183449444-3"
 },
 {
   "id": "13",
@@ -120,11 +120,11 @@
 },
 {
   "id": "16",
-  "name": "\"BENZOCAINE",
-  "brand": " RESORCINOL\"",
-  "company": "Vagicaine",
-  "price": "\"Personal Care Products",
-  "isbn": " Inc.\""
+  "name": "\"BENZOCAINE, RESORCINOL\"",
+  "brand": "Vagicaine",
+  "company": "\"Personal Care Products, Inc.\"",
+  "price": "$46.20",
+  "isbn": "002573348-6"
 },
 {
   "id": "17",
@@ -154,17 +154,17 @@
   "id": "20",
   "name": "Enalapril Maleate",
   "brand": "Enalapril Maleate",
-  "company": "\"Golden State Medical Supply",
-  "price": " Inc.\"",
-  "isbn": "$46.52"
+  "company": "\"Golden State Medical Supply, Inc.\"",
+  "price": "$46.52",
+  "isbn": "444846301-X"
 },
 {
   "id": "21",
   "name": "Iron",
   "brand": "Ferrous Sulfate",
-  "company": "\"Boca Pharmacal",
-  "price": " LLC\"",
-  "isbn": "$39.04"
+  "company": "\"Boca Pharmacal, LLC\"",
+  "price": "$39.04",
+  "isbn": "895157442-3"
 },
 {
   "id": "22",
@@ -178,9 +178,9 @@
   "id": "23",
   "name": "Tacrolimus",
   "brand": "Prograf",
-  "company": "\"Aphena Pharma Solutions - Tennessee",
-  "price": " LLC\"",
-  "isbn": "$37.28"
+  "company": "\"Aphena Pharma Solutions - Tennessee, LLC\"",
+  "price": "$37.28",
+  "isbn": "224327491-4"
 },
 {
   "id": "24",
@@ -210,9 +210,9 @@
   "id": "27",
   "name": "Etomidate",
   "brand": "Etomidate",
-  "company": "\"American Regent",
-  "price": " Inc.\"",
-  "isbn": "$12.38"
+  "company": "\"American Regent, Inc.\"",
+  "price": "$12.38",
+  "isbn": "572827411-0"
 },
 {
   "id": "28",
@@ -234,17 +234,17 @@
   "id": "30",
   "name": "DOCUSATE SODIUM",
   "brand": "DOCUSATE SODIUM",
-  "company": "\"Gemini Pharmaceuticals",
-  "price": " Inc. dba ONDRA Pharmaceuticals\"",
-  "isbn": "$18.58"
+  "company": "\"Gemini Pharmaceuticals, Inc. dba ONDRA Pharmaceuticals\"",
+  "price": "$18.58",
+  "isbn": "133236634-1"
 },
 {
   "id": "31",
-  "name": "\"Sulfacetamide Sodium",
-  "brand": " Sulfur\"",
-  "company": "\"Sulfacetamide Sodium",
-  "price": " Sulfur\"",
-  "isbn": "\"Ascend Laboratories"
+  "name": "\"Sulfacetamide Sodium, Sulfur\"",
+  "brand": "\"Sulfacetamide Sodium, Sulfur\"",
+  "company": "\"Ascend Laboratories, LLC\"",
+  "price": "$6.26",
+  "isbn": "021240707-4"
 },
 {
   "id": "32",
@@ -280,11 +280,11 @@
 },
 {
   "id": "36",
-  "name": "\"Dextroamphetamine Saccharate",
-  "brand": " Amphetamine Aspartate Monohydrate",
-  "company": " Dextroamphetamine Sulfate and Amphetamine Sulfate\"",
-  "price": "\"Dextroamphetamine Saccharate",
-  "isbn": " Amphetamine Aspartate Monohydrate"
+  "name": "\"Dextroamphetamine Saccharate, Amphetamine Aspartate Monohydrate, Dextroamphetamine Sulfate and Amphetamine Sulfate\"",
+  "brand": "\"Dextroamphetamine Saccharate, Amphetamine Aspartate Monohydrate, Dextroamphetamine Sulfate and Amphetamine Sulfate\"",
+  "company": "\"Eon Labs, Inc.\"",
+  "price": "$25.16",
+  "isbn": "482413311-4"
 },
 {
   "id": "37",
@@ -306,9 +306,9 @@
   "id": "39",
   "name": "SALICYLIC ACID",
   "brand": "Hope In A Bottle",
-  "company": "\"Philosophy",
-  "price": " Inc.\"",
-  "isbn": "$17.00"
+  "company": "\"Philosophy, Inc.\"",
+  "price": "$17.00",
+  "isbn": "186959886-5"
 },
 {
   "id": "40",
@@ -330,33 +330,33 @@
   "id": "42",
   "name": "echothiophate iodide",
   "brand": "Phospholine Iodide",
-  "company": "\"Wyeth Pharmaceuticals Inc.",
-  "price": " a subsidiary of Pfizer Inc.\"",
-  "isbn": "$17.10"
+  "company": "\"Wyeth Pharmaceuticals Inc., a subsidiary of Pfizer Inc.\"",
+  "price": "$17.10",
+  "isbn": "567241468-0"
 },
 {
   "id": "43",
   "name": "DULOXETINE HYDROCHLORIDE",
   "brand": "DULOXETINE",
-  "company": "\"Breckenridge Pharmaceutical",
-  "price": " Inc.\"",
-  "isbn": "$44.10"
+  "company": "\"Breckenridge Pharmaceutical, Inc.\"",
+  "price": "$44.10",
+  "isbn": "440207103-8"
 },
 {
   "id": "44",
   "name": "ARBUTIN",
   "brand": "Sooryehan Pure-Whitening Essential Starter",
-  "company": "\"LG Household and Healthcare",
-  "price": " Inc.\"",
-  "isbn": "$49.41"
+  "company": "\"LG Household and Healthcare, Inc.\"",
+  "price": "$49.41",
+  "isbn": "917302327-2"
 },
 {
   "id": "45",
-  "name": "\"Octinoxate",
-  "brand": " Octisalate\"",
-  "company": "Rimmel London",
-  "price": "Lancaster S.A.M.",
-  "isbn": "$41.26"
+  "name": "\"Octinoxate, Octisalate\"",
+  "brand": "Rimmel London",
+  "company": "Lancaster S.A.M.",
+  "price": "$41.26",
+  "isbn": "905334515-9"
 },
 {
   "id": "46",
@@ -370,9 +370,9 @@
   "id": "47",
   "name": "Tramadol Hydrochloride Extended-Release Tablets",
   "brand": "Tramadol Hydrochloride",
-  "company": "\"Par Pharmaceutical",
-  "price": " Inc.\"",
-  "isbn": "$39.00"
+  "company": "\"Par Pharmaceutical, Inc.\"",
+  "price": "$39.00",
+  "isbn": "226638625-5"
 },
 {
   "id": "48",
@@ -394,9 +394,9 @@
   "id": "50",
   "name": "Oxcarbazepine",
   "brand": "Oxcarbazepine",
-  "company": "\"Roxane Laboratories",
-  "price": " Inc\"",
-  "isbn": "$5.42"
+  "company": "\"Roxane Laboratories, Inc\"",
+  "price": "$5.42",
+  "isbn": "581158674-4"
 },
 {
   "id": "51",
@@ -410,9 +410,9 @@
   "id": "52",
   "name": "Bismuth Subsalycilate",
   "brand": "Threda",
-  "company": "\"Menper Distributors",
-  "price": " Inc.\"",
-  "isbn": "$31.69"
+  "company": "\"Menper Distributors, Inc.\"",
+  "price": "$31.69",
+  "isbn": "403029723-4"
 },
 {
   "id": "53",
@@ -426,17 +426,17 @@
   "id": "54",
   "name": "Quetiapine fumarate",
   "brand": "Quetiapine fumarate",
-  "company": "\"Physicians Total Care",
-  "price": " Inc.\"",
-  "isbn": "$38.49"
+  "company": "\"Physicians Total Care, Inc.\"",
+  "price": "$38.49",
+  "isbn": "729547936-8"
 },
 {
   "id": "55",
-  "name": "\"TITANIUM DIOXIDE",
-  "brand": " OCTINOXATE",
-  "company": " ZINC OXIDE\"",
-  "price": "ATOMY BB",
-  "isbn": "\"ATOMY CO."
+  "name": "\"TITANIUM DIOXIDE, OCTINOXATE, ZINC OXIDE\"",
+  "brand": "ATOMY BB",
+  "company": "\"ATOMY CO., LTD.\"",
+  "price": "$12.41",
+  "isbn": "327950612-3"
 },
 {
   "id": "56",
@@ -450,9 +450,9 @@
   "id": "57",
   "name": "Benzalkonium Chloride",
   "brand": "BZK",
-  "company": "\"Jiangsu Province JianErKang Medical Dressing Co.",
-  "price": "Ltd\"",
-  "isbn": "$2.94"
+  "company": "\"Jiangsu Province JianErKang Medical Dressing Co.,Ltd\"",
+  "price": "$2.94",
+  "isbn": "753300917-7"
 },
 {
   "id": "58",
@@ -474,25 +474,25 @@
   "id": "60",
   "name": "lubiprostone",
   "brand": "Amitiza",
-  "company": "\"Physicians Total Care",
-  "price": " Inc.\"",
-  "isbn": "$2.11"
+  "company": "\"Physicians Total Care, Inc.\"",
+  "price": "$2.11",
+  "isbn": "122238039-0"
 },
 {
   "id": "61",
-  "name": "\"Ibuprofen",
-  "brand": " Pseudoephedrine HCl\"",
-  "company": "ibuprofen cold relief",
-  "price": "CVS Pharmacy",
-  "isbn": "$24.51"
+  "name": "\"Ibuprofen, Pseudoephedrine HCl\"",
+  "brand": "ibuprofen cold relief",
+  "company": "CVS Pharmacy",
+  "price": "$24.51",
+  "isbn": "350939928-5"
 },
 {
   "id": "62",
-  "name": "\"Walnut",
-  "brand": " Black Juglans nigra\"",
-  "company": "\"Pollens - Trees",
-  "price": " Walnut",
-  "isbn": " Black Juglans nigra\""
+  "name": "\"Walnut, Black Juglans nigra\"",
+  "brand": "\"Pollens - Trees, Walnut, Black Juglans nigra\"",
+  "company": "Jubilant HollisterStier LLC",
+  "price": "$31.61",
+  "isbn": "345802780-7"
 },
 {
   "id": "63",
@@ -512,19 +512,19 @@
 },
 {
   "id": "65",
-  "name": "\"GLYCERIN",
-  "brand": " DIMETHICONE\"",
-  "company": "ORIGINAL POWER WHITENING AND LINELESS AMPOULE",
-  "price": "\"NATURE REPUBLIC CO.",
-  "isbn": " LTD.\""
+  "name": "\"GLYCERIN, DIMETHICONE\"",
+  "brand": "ORIGINAL POWER WHITENING AND LINELESS AMPOULE",
+  "company": "\"NATURE REPUBLIC CO., LTD.\"",
+  "price": "$13.47",
+  "isbn": "797135344-8"
 },
 {
   "id": "66",
   "name": "Amlodipine besylate",
   "brand": "Amlodipine besylate",
-  "company": "\"Exelan Pharmaceuticals",
-  "price": " Inc.\"",
-  "isbn": "$32.36"
+  "company": "\"Exelan Pharmaceuticals, Inc.\"",
+  "price": "$32.36",
+  "isbn": "469514818-8"
 },
 {
   "id": "67",
@@ -538,41 +538,41 @@
   "id": "68",
   "name": "ALCOHOL",
   "brand": "Almond Antibacterial Hand Sanitizer",
-  "company": "\"Harrison Specialty Co.",
-  "price": " Inc.\"",
-  "isbn": "$21.46"
+  "company": "\"Harrison Specialty Co., Inc.\"",
+  "price": "$21.46",
+  "isbn": "363851495-1"
 },
 {
   "id": "69",
   "name": "Ibuprofen",
   "brand": "Ibuprofen",
-  "company": "\"NCS HealthCare of KY",
-  "price": " Inc dba Vangard Labs\"",
-  "isbn": "$12.70"
+  "company": "\"NCS HealthCare of KY, Inc dba Vangard Labs\"",
+  "price": "$12.70",
+  "isbn": "780829893-X"
 },
 {
   "id": "70",
-  "name": "\"Octinoxate",
-  "brand": " Oxybenzone",
-  "company": " and Octisalate\"",
-  "price": "Jane Seymour Natural Advantage",
-  "isbn": "Guthy-Renker LLC"
+  "name": "\"Octinoxate, Oxybenzone, and Octisalate\"",
+  "brand": "Jane Seymour Natural Advantage",
+  "company": "Guthy-Renker LLC",
+  "price": "$38.19",
+  "isbn": "538944630-5"
 },
 {
   "id": "71",
   "name": "Bupropion Hydrochloride",
   "brand": "Bupropion Hydrochloride",
-  "company": "\"Dispensing Solutions",
-  "price": " Inc.\"",
-  "isbn": "$13.68"
+  "company": "\"Dispensing Solutions, Inc.\"",
+  "price": "$13.68",
+  "isbn": "569328702-5"
 },
 {
   "id": "72",
   "name": "Acetaminophen",
   "brand": "TYLENOL",
-  "company": "\"McNeil Consumer Healthcare Div. McNeil-PPC",
-  "price": " Inc\"",
-  "isbn": "$28.85"
+  "company": "\"McNeil Consumer Healthcare Div. McNeil-PPC, Inc\"",
+  "price": "$28.85",
+  "isbn": "260109077-4"
 },
 {
   "id": "73",
@@ -586,17 +586,17 @@
   "id": "74",
   "name": "Metformin",
   "brand": "Metformin Hydrochloride",
-  "company": "\"PD-Rx Pharmaceuticals",
-  "price": " Inc.\"",
-  "isbn": "$49.41"
+  "company": "\"PD-Rx Pharmaceuticals, Inc.\"",
+  "price": "$49.41",
+  "isbn": "701672305-4"
 },
 {
   "id": "75",
-  "name": "\"Allantoin ",
-  "brand": " Dimethicone\"",
-  "company": "Miracle Heel Repair",
-  "price": "Winning Solutions",
-  "isbn": "$18.60"
+  "name": "\"Allantoin , Dimethicone\"",
+  "brand": "Miracle Heel Repair",
+  "company": "Winning Solutions",
+  "price": "$18.60",
+  "isbn": "209833608-X"
 },
 {
   "id": "76",
@@ -642,9 +642,9 @@
   "id": "81",
   "name": "ZINC ACETATE ANHYDROUS and ZINC GLUCONATE",
   "brand": "Zicam",
-  "company": "\"Matrixx Initiatives",
-  "price": " Inc.\"",
-  "isbn": "$27.58"
+  "company": "\"Matrixx Initiatives, Inc.\"",
+  "price": "$27.58",
+  "isbn": "285990099-3"
 },
 {
   "id": "82",
@@ -714,17 +714,17 @@
   "id": "90",
   "name": "Ibuprofen",
   "brand": "Junior Strength Ibuprofen",
-  "company": "\"Shopko Stores Operating Co.",
-  "price": " LLC\"",
-  "isbn": "$10.22"
+  "company": "\"Shopko Stores Operating Co., LLC\"",
+  "price": "$10.22",
+  "isbn": "945626116-6"
 },
 {
   "id": "91",
-  "name": "\"OCTINOXATE",
-  "brand": " OCTISALATE",
-  "company": " TITANIUM DIOXIDE\"",
-  "price": "FusionBeauty Colorceuticals PrimeResults Tinted Moisturizer SPF15 Golden Beige",
-  "isbn": "Fusion Brands"
+  "name": "\"OCTINOXATE, OCTISALATE, TITANIUM DIOXIDE\"",
+  "brand": "FusionBeauty Colorceuticals PrimeResults Tinted Moisturizer SPF15 Golden Beige",
+  "company": "Fusion Brands",
+  "price": "$15.77",
+  "isbn": "765615789-1"
 },
 {
   "id": "92",
@@ -736,11 +736,11 @@
 },
 {
   "id": "93",
-  "name": "\"Acetaminophen",
-  "brand": " Dextromethorphan HBr",
-  "company": " Doxylamine succinate\"",
-  "price": "health mart night time cold and flu",
-  "isbn": "McKesson"
+  "name": "\"Acetaminophen, Dextromethorphan HBr, Doxylamine succinate\"",
+  "brand": "health mart night time cold and flu",
+  "company": "McKesson",
+  "price": "$30.69",
+  "isbn": "145482770-X"
 },
 {
   "id": "94",
@@ -762,17 +762,17 @@
   "id": "96",
   "name": "Pinto Bean",
   "brand": "Pinto Bean",
-  "company": "\"Antigen Laboratories",
-  "price": " Inc.\"",
-  "isbn": "$39.50"
+  "company": "\"Antigen Laboratories, Inc.\"",
+  "price": "$39.50",
+  "isbn": "850179977-7"
 },
 {
   "id": "97",
   "name": "SALICYLIC ACID",
   "brand": "Clear Advantage",
-  "company": "\"Arbonne International",
-  "price": " LLC\"",
-  "isbn": "$19.76"
+  "company": "\"Arbonne International, LLC\"",
+  "price": "$19.76",
+  "isbn": "258146887-4"
 },
 {
   "id": "98",
@@ -786,9 +786,9 @@
   "id": "99",
   "name": "OXYCODONE HYDROCHLORIDE",
   "brand": "OXYCODONE HYDROCHLORIDE",
-  "company": "\"CorePharma",
-  "price": " LLC\"",
-  "isbn": "$35.83"
+  "company": "\"CorePharma, LLC\"",
+  "price": "$35.83",
+  "isbn": "405181909-4"
 },
 {
   "id": "100",
