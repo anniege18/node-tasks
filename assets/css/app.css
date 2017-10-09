@@ -1,0 +1,12 @@
+.ui-flex {
+    display: flex;
+    min-height: 100%;
+}
+
+.ui-reset-for-btn {
+    text-align: left;
+    background: transparent;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+}
