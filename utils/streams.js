@@ -119,7 +119,7 @@ const cssBundler = async (pathToFile) => {
     const stats = await stat(folderPath);
     if (stats.isDirectory()) {
         const files = await readdir(folderPath);
-        const writeStream = fs.createWriteStream(`${folderPath}/bundle.css`, { flags: 'w' });
+        let writeStream = fs.createWriteStream(`${folderPath}/bundle.css`, { flags: 'w' });
 
         files.forEach(async (file) => {
             const path = `${folderPath}/${file}`;
@@ -131,11 +131,11 @@ const cssBundler = async (pathToFile) => {
             }
         });
 
-        const writeStream2 = fs.createWriteStream(`${folderPath}/bundle.css`, { flags: 'a' });
+        writeStream = fs.createWriteStream(`${folderPath}/bundle.css`, { flags: 'a' });
         request(cssUrl)
-            .pipe(writeStream2);
+            .pipe(writeStream);
 
-        writeStream2.on('finish', () => {
+        writeStream.on('finish', () => {
             console.log('wrote all data to file');
         });
     }
