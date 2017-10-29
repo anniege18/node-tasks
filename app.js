@@ -1,17 +1,20 @@
-import { name } from './config';
-import * as models from './models';
-// import DirWatcher from './dirwatcher';
-// import Importer from './importer';
-import Streams from './utils/streams';
+import express from 'express';
+import router from './routes';
+const app = express();
 
-// const dirWatcher = new DirWatcher();
-// dirWatcher.watch('./data', 2000);
-// const importer = new Importer(dirWatcher);
-// importer.import();
-// importer.importSync();
-new Streams().runUtil();
+import cookieParser from './middlewares/parse-cookie';
+import queryParser from './middlewares/parse-query';
 
-console.log(`App name: ${name}`);
+app.use(cookieParser);
+app.use(queryParser);
 
-new models.User;
-new models.Product;
+app.use('/api', router);
+
+// app.get('*', (req, res) => {
+//   res.write(JSON.stringify(req.parsedCookies, null, 4));
+//   res.write('\n');
+//   res.write(JSON.stringify(req.parsedQuery, null, 4));
+//   res.end();
+// });
+
+export default app;

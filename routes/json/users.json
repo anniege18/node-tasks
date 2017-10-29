@@ -1,0 +1,56 @@
+[
+  {
+    "id": 0,
+    "name": "Ashley Hendrix",
+    "gender": "male",
+    "age": 23,
+    "company": "COLLAIRE",
+    "email": "ashleyhendrix@collaire.com",
+    "phone": "+1 (975) 569-3850"
+  },
+  {
+    "id": 1,
+    "name": "Sherman Espinoza",
+    "gender": "male",
+    "age": 25,
+    "company": "INCUBUS",
+    "email": "shermanespinoza@incubus.com",
+    "phone": "+1 (930) 498-3833"
+  },
+  {
+    "id": 2,
+    "name": "Brandie Newman",
+    "gender": "female",
+    "age": 35,
+    "company": "ENVIRE",
+    "email": "brandienewman@envire.com",
+    "phone": "+1 (890) 468-2012"
+  },
+  {
+    "id": 3,
+    "name": "Glover Craig",
+    "gender": "male",
+    "age": 29,
+    "company": "FARMAGE",
+    "email": "glovercraig@farmage.com",
+    "phone": "+1 (902) 592-2690"
+  },
+  {
+    "id": 4,
+    "name": "Bray Flores",
+    "gender": "male",
+    "age": 39,
+    "company": "MULTIFLEX",
+    "email": "brayflores@multiflex.com",
+    "phone": "+1 (815) 518-3689"
+  },
+  {
+    "id": 5,
+    "name": "Lancaster Richmond",
+    "gender": "male",
+    "age": 26,
+    "company": "PUSHCART",
+    "email": "lancasterrichmond@pushcart.com",
+    "phone": "+1 (804) 562-3137"
+  }
+]

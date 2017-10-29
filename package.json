@@ -1,21 +1,29 @@
 {
   "name": "homework1",
   "version": "0.0.1",
-  "description": "NodeJS Homework_1",
+  "description": "NodeJS Homework_4",
   "main": "index.js",
   "scripts": {
-    "start": "node ./index.js",
+    "babel-node": "babel-node --presets es2015",
+    "start": "nodemon --exec babel-node ./index.js",
+    "start:plain": "nodemon --exec babel-node http-servers/plain-http-server.js",
+    "start:http": "nodemon --exec babel-node http-servers/http-server.js",
+    "start:json": "nodemon --exec babel-node http-servers/json-server.js",
+    "start:echo": "nodemon --exec babel-node http-servers/echo-server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Anna Garmashevska",
   "license": "ISC",
   "devDependencies": {
     "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-register": "^6.26.0",
     "nodemon": "^1.12.1"
   },
   "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
     "moment": "^2.18.1",
     "request": "^2.83.0",
     "split": "^1.0.1",
