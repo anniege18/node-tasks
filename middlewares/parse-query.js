@@ -4,7 +4,7 @@ const queryParser = (req, res, next) => {
     req.parsedQuery = {};
     url.slice(url.indexOf('?') + 1).split('&').forEach(param => {
         const [key, value] = param.split('=');
-        req.parsedQuery[key] = value;
+        if (key) req.parsedQuery[key] = value && value || '';
     });
     next();
 };

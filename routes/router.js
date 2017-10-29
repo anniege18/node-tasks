@@ -1,15 +1,23 @@
 import express from 'express';
+import { readFile, writeFile } from 'fs';
 import path from 'path';
-import fs from 'fs';
 import bodyParser from 'body-parser';
 import { promisify } from 'util';
-import awaitTo from '../helpers/awaitTo';
+import { awaitTo } from '../helpers';
 
-const readFileAsync = promisify(fs.readFile);
-const writeFileAsync = promisify(fs.writeFile);
-const router = express.Router();
+const readFileAsync = promisify(readFile);
+const writeFileAsync = promisify(writeFile);
 
 const resolveUrl = url => path.resolve(__dirname, url);
+const productsFilename = resolveUrl('./json/products.json');
+const usersFilename = resolveUrl('./json/users.json');
+
+const router = express.Router();
+
+console.log(productsFilename);
+const getProducts = () => awaitTo(readFileAsync(productsFilename, 'utf8'));
+const setProducts = (products) => awaitTo(writeFileAsync(productsFilename, JSON.stringify(products, null, 2)));
+const getUsers = () => awaitTo(readFileAsync(usersFilename, 'utf8'));
 
 router.use(bodyParser.urlencoded({
     extended: true
@@ -23,7 +31,7 @@ router.use((req, res, next) => {
 });
 
 router.get('/products', async (req, res) => {
-    const [err, data] = await awaitTo(readFileAsync(resolveUrl('./json/products.json'), 'utf8'));
+    const [err, data] = await getProducts();
     if (err) res.status(404).json({ error: 'Products file not found' });
 
     const products = JSON.parse(data);
@@ -33,21 +41,21 @@ router.get('/products', async (req, res) => {
 });
 
 router.post('/products', async (req, res) => {
-    const filename = resolveUrl('./json/products.json');
-    const [err, data] = await awaitTo(readFileAsync(filename, 'utf8'));
+
+    const [err, data] = await getProducts();
     if (err) res.status(404).json({ error: 'Products file not found' });
 
     const products = JSON.parse(data);
     req.body.id = products.length;
     products.push(req.body);
-    const [error] = await awaitTo(writeFileAsync(filename, JSON.stringify(products, null, 2)));
+    const [error] = await setProducts(products);
     if (error) res.sendStatus(500);
 
     res.status(200).json(req.body);
 });
 
 router.get('/products/:id([0-9]+)', async (req, res) => {
-    const [err, data] = await awaitTo(readFileAsync(resolveUrl('./json/products.json'), 'utf8'));
+    const [err, data] = await getProducts();
     if (err) res.status(404).json({ error: 'Products file not found' });
 
     const products = JSON.parse(data);
@@ -58,7 +66,7 @@ router.get('/products/:id([0-9]+)', async (req, res) => {
 });
 
 router.get('/products/:id([0-9]+)/reviews', async (req, res) => {
-    const [err, data] = await awaitTo(readFileAsync(resolveUrl('./json/products.json'), 'utf8'));
+    const [err, data] = await getProducts();
     if (err) res.status(404).json({ error: 'Products file not found' });
 
     const products = JSON.parse(data);
@@ -74,7 +82,7 @@ router.get('/products/:id([0-9]+)/reviews', async (req, res) => {
 });
 
 router.get('/users', async (req, res) => {
-    const [err, data] = await awaitTo(readFileAsync(resolveUrl('./json/users.json'), 'utf8'));
+    const [err, data] = await getUsers();
     if (err) res.status(404).json({ error: 'Users file not found' });
 
     const users = JSON.parse(data);
