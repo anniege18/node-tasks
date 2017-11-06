@@ -6,8 +6,8 @@
   "scripts": {
     "babel-node": "babel-node --presets es2015",
     "start": "nodemon --exec babel-node ./index.js",
-    "start:plain": "nodemon --exec babel-node http-servers/plain-http-server.js",
-    "start:http": "nodemon --exec babel-node http-servers/http-server.js",
+    "start:plain": "nodemon --exec babel-node http-servers/plain-text-server.js",
+    "start:http": "nodemon --exec babel-node http-servers/html-server.js",
     "start:json": "nodemon --exec babel-node http-servers/json-server.js",
     "start:echo": "nodemon --exec babel-node http-servers/echo-server.js",
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -2,7 +2,6 @@ const http = require('http');
 const port = 3000;
 
 http.createServer((req, res) => {
-    res.setHeader('Content-Type', 'text/plain');
-    res.write('Hello World!');
-    res.end();
+    res.writeHead(200, { 'Content-Type': 'text/plain' });
+    res.end('Hello World!');
 }).listen(port, () => { console.log(`Listening port ${port}...`); });
