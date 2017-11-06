@@ -21,7 +21,7 @@ http.createServer((req, res) => {
     }
 
     if (file) {
-        const content = file.replace('{message}', 'Hello world!!!');
+        const content = file.replace(/{message}/g, 'Hello world!!!');
         res.writeHead(200, {'Content-Type': 'text/html'});
         res.end(content);
     }
@@ -32,7 +32,7 @@ http.createServer((req, res) => {
 const transformTemplate = new Transform({
     transform(chunk, encoding, done) {
         let templateStr = chunk.toString();
-        const str = templateStr.replace('{message}', 'Hello world!!!');
+        const str = templateStr.replace(/{message}/g, 'Hello world!!!');
         this.push(str);
         done();
     }
