@@ -1,8 +1,10 @@
+import { parse } from 'url';
+
 const queryParser = (req, res, next) => {
-    const url = req.url;
-    if (url.indexOf('?') === -1) return next();
+    const urlParsed = parse(req.url);
+    if (!urlParsed.query) return next();
     req.parsedQuery = {};
-    url.slice(url.indexOf('?') + 1).split('&').forEach(param => {
+    urlParsed.query.split('&').forEach(param => {
         const [key, value] = param.split('=');
         if (key) req.parsedQuery[key] = value && value || '';
     });
