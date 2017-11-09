@@ -1,2 +1,6 @@
-import router from './router';
-export default router;
+import routerJWT from './routerJWT';
+import routerPassport from './routerPassport';
+export {
+    routerJWT,
+    routerPassport,
+};
