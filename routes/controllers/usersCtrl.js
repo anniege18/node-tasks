@@ -1,4 +1,4 @@
-import users from './json/users.json';
+import users from '../json/users.json';
 
 const getUsers = (req, res) => {
     if (!users) {

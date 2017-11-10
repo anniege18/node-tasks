@@ -8,7 +8,7 @@ import {
     getReviews
 } from './controllers/productsCtrl';
 import getUsers from './controllers/usersCtrl';
-import authorize from './controllers/authCtrl';
+import { authorizeJWT } from './controllers/authCtrl';
 
 const router = express.Router();
 router.use(bodyParser.urlencoded({
@@ -27,7 +27,7 @@ router.post('/products', checkToken, addProduct);
 router.get('/products/:id([0-9]+)', checkToken, getProduct);
 router.get('/products/:id([0-9]+)/reviews', checkToken, getReviews);
 router.get('/users', checkToken, getUsers);
-router.post('/auth', authorize);
+router.post('/auth', authorizeJWT);
 
 router.get('*', (req, res) => {
     res.sendStatus(404);

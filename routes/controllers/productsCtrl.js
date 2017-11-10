@@ -1,5 +1,6 @@
 import { promisify } from 'util';
 import { writeFile } from 'fs';
+import path from 'path';
 import { awaitTo } from '../../helpers';
 import products from '../json/products.json';
 
