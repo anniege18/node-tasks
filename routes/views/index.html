@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Log in</title>
+  <style>
+    a {
+      display: block;
+      width: 60%;
+      padding: 5px 10px;
+      margin-bottom: 5px;
+      text-decoration: none;
+      text-align: center;
+      background-color: darkcyan;
+      color: aliceblue;
+    }
+    
+    a:hover {
+      background-color: dimgray;
+      transition: all .2s;
+    }
+    
+    a:active {
+      background-color: aqua;
+      color: darkmagenta;
+    }
+  </style>
+</head>
+<body>
+<h1>Log in</h1>
+<a href="#" id="login">Login</a>
+<a href="http://localhost:8080/api-pass/auth/google" target="_blank">Login with Google</a>
+<a href="http://127.0.0.1:8080/api-pass/auth/twitter" target="_blank">Login with Twitter</a>
+<a href="http://localhost:8080/api-pass/auth/facebook" target="_blank">Login with Facebook</a>
+<pre id="output"></pre>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  jQuery('#login').click(function () {
+      jQuery('#login').text('...');
+      jQuery.post('/api-pass/auth', {
+          "login": "nisi",
+          "password": "consectetur"
+      }).then(data => {
+          jQuery('#login').text('You are logged in!').css('background-color', 'red');
+          jQuery.ajax({
+              url: "/api-pass/products",
+              type: 'GET',
+              headers: {
+                  "Content-Type": "application/json; charset=utf-8",
+                  "Authorization": `Bearer ${data.token}`
+              }
+          }).then(function (products) {
+              jQuery('#output').html(JSON.stringify(products.products, null, 2));
+          }).catch(function (err) {
+              console.error(err);
+          });
+      });
+  });
+</script>
+</body>
+</html>
