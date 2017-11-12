@@ -5,6 +5,7 @@ import LocalStrategy from 'passport-local';
 import BearerStrategy from 'passport-http-bearer';
 import FacebookStrategy from 'passport-facebook';
 import TwitterStrategy from 'passport-twitter';
+const GoogleStrategy = require('passport-google-oauth20').Strategy;
 import {
     getProducts,
     addProduct,
@@ -60,32 +61,44 @@ passport.use(new BearerStrategy(
 passport.use(new FacebookStrategy({
       clientID: 810393999162470,
       clientSecret: '66aeec00e368e8607b0c2fdd2ded400a',
-      callbackURL: "http://localhost:8080/auth/facebook/callback"
+      callbackURL: "http://127.0.0.1:8080/api-pass/auth/facebook/callback"
   },
   function(accessToken, refreshToken, profile, cb) {
     console.log(profile.id);
-      // User.findOrCreate({ facebookId: profile.id }, function (err, user) {
-      //     return cb(err, user);
-      // });
+      return cb(null, profile);
   }
 ));
 
 passport.use(new TwitterStrategy({
       consumerKey: '5WGZI6m1smLt9cpbgAZfUbcjn',
       consumerSecret: '1ed78vDzGZAfsOnl1QHmNb4oY887fZQ6s4nOhHmtIpGFOPYbxt',
-      callbackURL: 'http://127.0.0.1:8080/api-pass/twitter'
+      callbackURL: 'http://localhost:8080/api-pass/auth/twitter/callback'
   },
-  function(token, tokenSecret, profile, cb) {
-      return cb(null, profile);
+  function(token, tokenSecret, profile, done) {
+    console.log('callback', profile);
+    console.log('done', done);
+      return done((err) => { console.log(err); }, profile);
   }
 ));
 
+passport.use(new GoogleStrategy({
+        clientID: GOOGLE_CLIENT_ID,
+        clientSecret: GOOGLE_CLIENT_SECRET,
+        callbackURL: "http://localhost:8080/api-pass/auth/google/callback"
+    },
+    function(accessToken, refreshToken, profile, cb) {
+        User.findOrCreate({ googleId: profile.id }, function (err, user) {
+            return cb(err, user);
+        });
+    }
+));
+
 passport.serializeUser(function(user, cb) {
-    cb(null, user);
+    cb((err) => { console.log(err); }, user);
 });
 
 passport.deserializeUser(function(obj, cb) {
-    cb(null, obj);
+    cb((err) => { console.log(err); }, obj);
 });
 
 router.use((req, res, next) => {
@@ -102,13 +115,19 @@ router.get('/users', passport.authenticate('bearer', { session: false }), getUse
 router.post('/auth',  passport.authenticate('local', { session: false }), authorizePassport);
 router.get('/auth/facebook', passport.authenticate('facebook'));
 router.get('/auth/twitter', passport.authenticate('twitter'));
+router.get('/auth/google', passport.authenticate('google'));
 
-router.get('/twitter',
-  passport.authenticate('twitter', { failureRedirect: '/return' }),
-  (req, res) => {
-    console.log('!!!!!!!!!!!!!');
-      res.send('Hello! You logged in with twitter account');
-  });
+router.get('/auth/twitter/callback', passport.authenticate('twitter', { session: false }, { failureRedirect: '/' }), (req, res) => {
+    res.send('ok');
+});
+
+router.get('/auth/facebook/callback', passport.authenticate('facebook', { session: false }, { failureRedirect: '/' }), (req, res) => {
+    res.send('facebook ok');
+});
+
+router.get('/auth/google/return', passport.authenticate('google', { failureRedirect: '/' }), (req, res) => {
+    res.redirect('/');
+});
 
 router.get('*', (req, res) => {
     res.sendStatus(404);
