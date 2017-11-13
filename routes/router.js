@@ -1,6 +1,5 @@
 import express from 'express';
 import bodyParser from 'body-parser';
-import { checkToken } from '../helpers';
 import {
     getProducts,
     addProduct,
@@ -8,7 +7,6 @@ import {
     getReviews
 } from './controllers/productsCtrl';
 import getUsers from './controllers/usersCtrl';
-import { authorizeJWT } from './controllers/authCtrl';
 
 const router = express.Router();
 router.use(bodyParser.urlencoded({
@@ -22,12 +20,11 @@ router.use((req, res, next) => {
     next();
 });
 
-router.get('/products', checkToken, getProducts);
-router.post('/products', checkToken, addProduct);
-router.get('/products/:id([0-9]+)', checkToken, getProduct);
-router.get('/products/:id([0-9]+)/reviews', checkToken, getReviews);
-router.get('/users', checkToken, getUsers);
-router.post('/auth', authorizeJWT);
+router.get('/products', getProducts);
+router.post('/products', addProduct);
+router.get('/products/:id([0-9]+)', getProduct);
+router.get('/products/:id([0-9]+)/reviews', getReviews);
+router.get('/users', getUsers);
 
 router.get('*', (req, res) => {
     res.sendStatus(404);
