@@ -3,7 +3,9 @@ import path from 'path';
 import bodyParser from 'body-parser';
 // import { promisify } from 'util';
 import { awaitTo } from '../helpers';
-import { User, Product } from '../utils';
+import models from '../models';
+
+// console.log(Product);
 
 
 const router = express.Router();
@@ -21,7 +23,7 @@ router.use(bodyParser.json());
 
 // const Product = new models.Product();
 
-const ProductModel = Product.getModel();
+const ProductModel = models.Product.getModel();
 
 router.get('/products', async (req, res) => {
 

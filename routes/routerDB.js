@@ -4,7 +4,7 @@ import { awaitTo } from '../helpers';
 import cities from '../models/data/cities.json';
 import models from '../models';
 
-const Cities  = new models.Cities();
+const Cities  = models.Cities;
 
 import { MongoClient } from 'mongodb';
 const url = 'mongodb://localhost:27017/test';
