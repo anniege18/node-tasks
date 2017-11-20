@@ -1,5 +1,5 @@
 import express from 'express';
-import { routerJWT, routerPassport } from './routes';
+import { routerJWT, routerPassport, routerDB } from './routes';
 import cookieParser from './middlewares/parse-cookie';
 import queryParser from './middlewares/parse-query';
 
@@ -13,5 +13,6 @@ app.get('/', (req, res)=>{
 });
 app.use('/api-pass', routerPassport);
 app.use('/api-jwt', routerJWT);
+app.use('/db', routerDB);
 
 export default app;
