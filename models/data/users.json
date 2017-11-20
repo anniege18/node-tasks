@@ -1,0 +1,86 @@
+[
+  {
+    "firstName": "Pena",
+    "lastName": "Evans",
+    "gender": "male",
+    "email": "penaevans@netbook.com",
+    "phone": "(916) 460-3782"
+  },
+  {
+    "firstName": "Gould",
+    "lastName": "Gillespie",
+    "gender": "male",
+    "email": "gouldgillespie@netbook.com",
+    "phone": "(974) 434-2739"
+  },
+  {
+    "firstName": "Pruitt",
+    "lastName": "Benjamin",
+    "gender": "male",
+    "email": "pruittbenjamin@netbook.com",
+    "phone": "(870) 492-2719"
+  },
+  {
+    "firstName": "Thelma",
+    "lastName": "Velazquez",
+    "gender": "female",
+    "email": "thelmavelazquez@netbook.com",
+    "phone": "(865) 446-2528"
+  },
+  {
+    "firstName": "English",
+    "lastName": "Goff",
+    "gender": "male",
+    "email": "englishgoff@netbook.com",
+    "phone": "(831) 575-2636"
+  },
+  {
+    "firstName": "Foley",
+    "lastName": "Albert",
+    "gender": "male",
+    "email": "foleyalbert@netbook.com",
+    "phone": "(819) 564-2697"
+  },
+  {
+    "firstName": "Mcfarland",
+    "lastName": "Castro",
+    "gender": "male",
+    "email": "mcfarlandcastro@netbook.com",
+    "phone": "(866) 422-3115"
+  },
+  {
+    "firstName": "Byrd",
+    "lastName": "Morales",
+    "gender": "male",
+    "email": "byrdmorales@netbook.com",
+    "phone": "(958) 429-2995"
+  },
+  {
+    "firstName": "Herminia",
+    "lastName": "Brewer",
+    "gender": "female",
+    "email": "herminiabrewer@netbook.com",
+    "phone": "(819) 541-2301"
+  },
+  {
+    "firstName": "Daniels",
+    "lastName": "Reeves",
+    "gender": "male",
+    "email": "danielsreeves@netbook.com",
+    "phone": "(970) 412-2566"
+  },
+  {
+    "firstName": "Rachel",
+    "lastName": "Hutchinson",
+    "gender": "female",
+    "email": "rachelhutchinson@netbook.com",
+    "phone": "(884) 447-3824"
+  },
+  {
+    "firstName": "Jewell",
+    "lastName": "Mcdonald",
+    "gender": "female",
+    "email": "jewellmcdonald@netbook.com",
+    "phone": "(804) 447-2262"
+  }
+]

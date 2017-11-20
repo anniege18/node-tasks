@@ -2,6 +2,7 @@ import express from 'express';
 import { routerJWT, routerPassport, routerDB } from './routes';
 import cookieParser from './middlewares/parse-cookie';
 import queryParser from './middlewares/parse-query';
+import './utils';
 
 const app = express();
 

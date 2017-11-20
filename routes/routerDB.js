@@ -1,15 +1,13 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import { awaitTo } from '../helpers';
-import * as dbm from '../utils/mongooseDBUtils';
+import cities from '../models/data/cities.json';
+import models from '../models';
 
-dbm.setUpConnection();
-// import path from 'path';
-
-import { cities } from '../models/data';
+const Cities  = new models.Cities();
 
 import { MongoClient } from 'mongodb';
-const url = 'mongodb://localhost:27017/cities';
+const url = 'mongodb://localhost:27017/test';
 
 MongoClient.connect(url, async (err, db) => {
     if (err) throw err;
@@ -45,9 +43,9 @@ router.get('/cities', (req, res) => {
 });
 
 router.get('/city', async (req, res) => {
-    const count = await dbm.countCities();
+    const count = await Cities.countCities();
     const randomCount = randomIntFromInterval(0, count-1);
-    const city = await dbm.findCity(randomCount);
+    const city = await Cities.findCity(randomCount);
     city.forEach(item => {
         res.json(item);
     });
