@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 
 const ProductSchema = {
-    index: { type: Number, max: 1000 },
+    index: { type: Number, max: 1000, unique: true },
     name: String,
     brand: String,
     company: String,
@@ -22,6 +22,10 @@ class Product {
     constructor() {
         mongoose.connect('mongodb://localhost:27017/test', { useMongoClient: true });
         this.model = mongoose.model('Product', new Schema(ProductSchema));
+    }
+
+    getModel() {
+        return this.model;
     }
 
     async loadProducts(products) {

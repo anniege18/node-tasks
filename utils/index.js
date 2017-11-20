@@ -7,3 +7,8 @@ User.loadUsers(users);
 
 const Product = new models.Product();
 Product.loadProducts(products);
+
+export {
+    User,
+    Product
+}

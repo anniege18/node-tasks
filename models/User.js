@@ -5,7 +5,7 @@ const UserSchema = {
     firstName: String,
     lastName: String,
     gender: { type: String, enum: ['female', 'male'] },
-    email: String,
+    email: { type: String, unique: true },
     phone: String
 };
 

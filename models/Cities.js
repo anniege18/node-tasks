@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 mongoose.Promise = global.Promise;
 
 const CitiesSchema = {
-    index: { type: Number, max: 99, required: true },
+    index: { type: Number, max: 99, required: true, unique: true },
     name: String,
     country: String,
     capital: { type: Boolean, required: [() => this.name !== '', 'capital value required if city name specified'] },
