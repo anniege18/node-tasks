@@ -1,134 +1,52 @@
 [
   {
-    "id": "0d562778-9f6e-48af-8330-9956d4b94dc0",
-    "login": "reprehenderit",
-    "password": "aliqua",
-    "isActive": true,
-    "name": "Kennedy Bonner",
-    "gender": "male",
-    "company": "EXERTA",
-    "email": "kennedybonner@exerta.com",
-    "phone": "+1 (897) 535-2070"
-  },
-  {
-    "id": "f211ceb7-2663-4ce0-83e3-6d2dac2adffb",
-    "login": "ea",
-    "password": "occaecat",
-    "isActive": false,
-    "name": "Millie Simmons",
-    "gender": "female",
-    "company": "NIMON",
-    "email": "milliesimmons@nimon.com",
-    "phone": "+1 (857) 537-3091"
-  },
-  {
-    "id": "e690b3af-8083-4186-be88-74a6097b68ac",
-    "login": "id",
-    "password": "non",
-    "isActive": true,
-    "name": "Holder Pennington",
-    "gender": "male",
-    "company": "KNOWLYSIS",
-    "email": "holderpennington@knowlysis.com",
-    "phone": "+1 (964) 484-3955"
-  },
-  {
-    "id": "a51067e6-cb74-44af-b858-15ab6b53a6a1",
-    "login": "veniam",
-    "password": "pariatur",
-    "isActive": false,
-    "name": "Coleen Flores",
-    "gender": "female",
-    "company": "TELPOD",
-    "email": "coleenflores@telpod.com",
-    "phone": "+1 (909) 440-2237"
-  },
-  {
-    "id": "52bfe91b-6787-4d60-9c92-e6809e01a296",
-    "login": "mollit",
+    "login": "cupidatat",
     "password": "aute",
     "isActive": true,
-    "name": "Earnestine Brooks",
-    "gender": "female",
-    "company": "STELAECOR",
-    "email": "earnestinebrooks@stelaecor.com",
-    "phone": "+1 (968) 446-2715"
-  },
-  {
-    "id": "f5d2b64a-3500-45ab-8dce-1d4decadf2c0",
-    "login": "nisi",
-    "password": "consectetur",
-    "isActive": false,
-    "name": "Melinda Nelson",
-    "gender": "female",
-    "company": "COLAIRE",
-    "email": "melindanelson@colaire.com",
-    "phone": "+1 (944) 490-2034"
-  },
-  {
-    "id": "13b47ff1-dc22-4d6c-afd7-e3d22cd86a0a",
-    "login": "enim",
-    "password": "consectetur",
-    "isActive": false,
-    "name": "Alison Paul",
-    "gender": "female",
-    "company": "RONELON",
-    "email": "alisonpaul@ronelon.com",
-    "phone": "+1 (811) 496-2338"
-  },
-  {
-    "id": "b3c1da5d-a481-41a6-a7b4-497dfd58de62",
-    "login": "minim",
-    "password": "ut",
-    "isActive": false,
-    "name": "Lidia Callahan",
-    "gender": "female",
-    "company": "MANTRO",
-    "email": "lidiacallahan@mantro.com",
-    "phone": "+1 (861) 531-2654"
-  },
-  {
-    "id": "d7bc205d-38ea-4b5a-b02b-dcf45b45b363",
-    "login": "officia",
-    "password": "deserunt",
-    "isActive": true,
-    "name": "Walters White",
+    "name": "Gamble Haynes",
     "gender": "male",
-    "company": "TRASOLA",
-    "email": "walterswhite@trasola.com",
-    "phone": "+1 (868) 561-2633"
+    "company": "SOLGAN",
+    "email": "gamblehaynes@solgan.com",
+    "phone": "+1 (983) 477-2078"
   },
   {
-    "id": "ebc62f45-5849-4c4c-b1ce-0a49923845f0",
-    "login": "enim",
-    "password": "nisi",
+    "login": "irure",
+    "password": "esse",
     "isActive": true,
-    "name": "Weber Dennis",
+    "name": "Deleon Randolph",
     "gender": "male",
-    "company": "WAAB",
-    "email": "weberdennis@waab.com",
-    "phone": "+1 (947) 442-2874"
+    "company": "RETRACK",
+    "email": "deleonrandolph@retrack.com",
+    "phone": "+1 (853) 531-2839"
   },
   {
-    "id": "c60f2620-172e-4a74-85a4-7c3373952e4f",
-    "login": "Lorem",
-    "password": "labore",
-    "isActive": false,
-    "name": "Rosalie Sanders",
-    "gender": "female",
-    "company": "BUZZWORKS",
-    "email": "rosaliesanders@buzzworks.com",
-    "phone": "+1 (918) 500-2155"
+    "login": "ipsum",
+    "password": "mollit",
+    "isActive": true,
+    "name": "Bass Jordan",
+    "gender": "male",
+    "company": "ZENSURE",
+    "email": "bassjordan@zensure.com",
+    "phone": "+1 (962) 577-3996"
   },
   {
-    "id": "518e18fc-4ce9-41f9-ad8a-2d243bcc35aa",
-    "login": "aute",
-    "password": "adipisicing",
+    "login": "et",
+    "password": "eiusmod",
     "isActive": false,
-    "name": "Ines Banks",
+    "name": "Warner Meyer",
+    "gender": "male",
+    "company": "ZENSOR",
+    "email": "warnermeyer@zensor.com",
+    "phone": "+1 (874) 402-3074"
+  },
+  {
+    "login": "ullamco",
+    "password": "ullamco",
+    "isActive": true,
+    "name": "Lourdes Barnett",
     "gender": "female",
-    "company": "MOREGANIC",
-    "email": "inesbanks@moreganic.com",
-    "phone": "+1 (955) 477-2847"
+    "company": "VORATAK",
+    "email": "lourdesbarnett@voratak.com",
+    "phone": "+1 (855) 504-3626"
   }
 ]

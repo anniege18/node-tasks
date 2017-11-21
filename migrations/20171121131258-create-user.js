@@ -1,4 +1,6 @@
 'use strict';
+const users = require('../routes/json/users.json');
+
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('Users', {
@@ -33,13 +35,15 @@ module.exports = {
         type: Sequelize.STRING
       },
       createdAt: {
-        allowNull: false,
+        allowNull: true,
         type: Sequelize.DATE
       },
       updatedAt: {
-        allowNull: false,
+        allowNull: true,
         type: Sequelize.DATE
       }
+    }).then(() => {
+        queryInterface.bulkInsert('Users', users);
     });
   },
   down: (queryInterface, Sequelize) => {
