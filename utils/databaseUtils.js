@@ -44,4 +44,4 @@ const Products = sequelize.define('products', {
 
 Products.findAll().then(products => {
     console.log(products)
-})
+});
