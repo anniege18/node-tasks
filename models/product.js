@@ -12,13 +12,10 @@ module.exports = (sequelize, DataTypes) => {
     company: DataTypes.STRING,
     price: DataTypes.STRING,
     isbn: DataTypes.STRING
-  },
-  {
-    underscored: true
-  },{
+  }, {
     classMethods: {
       associate: function(models) {
-          Product.hasMany(models.review, {foreignKey: 'productId', sourceKey: 'id'}, { as: 'children' });
+          Product.hasMany(models.Review, {foreignKey: 'productId'}, { as: 'children' });
       }
     }
   });

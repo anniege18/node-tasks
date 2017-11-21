@@ -6,9 +6,10 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     classMethods: {
       associate: function(models) {
-        Review.belongsTo(models.product);
+        console.log(models);
+        Review.belongsTo(models.Product);
       }
     }
-  },{underscored: true});
+  });
   return Review;
 };
