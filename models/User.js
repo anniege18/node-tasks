@@ -23,6 +23,10 @@ class User {
         this.model = mongoose.model('User', new Schema(UserSchema));
     }
 
+    getModel() {
+        return this.model;
+    }
+
     async loadUsers(users) {
         await this.model.collection.drop();
         this.model.collection.insert(users, cb);
