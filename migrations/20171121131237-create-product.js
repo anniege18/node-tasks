@@ -1,7 +1,5 @@
 'use strict';
-import csv from 'csvtojson';
-
-const pathToFile = ''
+const promise = require('../helpers/parseCSV');
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
@@ -13,10 +11,10 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       name: {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
       },
       brand: {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
       },
       company: {
         type: Sequelize.STRING
@@ -28,16 +26,17 @@ module.exports = {
         type: Sequelize.STRING
       },
       createdAt: {
-        allowNull: false,
+        allowNull: true,
         type: Sequelize.DATE
       },
       updatedAt: {
-        allowNull: false,
+        allowNull: true,
         type: Sequelize.DATE
       }
-    }).then(function() {
-        queryInterface.sequelize.bulkInsert('Product', );
-        done();
+    }).then(() => {
+        promise.then((data) => {
+          queryInterface.bulkInsert('Products', data);
+        });
     });
   },
   down: (queryInterface, Sequelize) => {
