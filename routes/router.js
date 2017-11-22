@@ -3,9 +3,6 @@ import bodyParser from 'body-parser';
 import { awaitTo } from '../helpers';
 import db from '../models';
 
-db['Product'].hasMany(db['Review'], { foreignKey: 'productId', sourceKey: 'id'});
-db['Review'].belongsTo(db['Product'], { foreignKey: 'productId', targetKey: 'id'});
-
 const router = express.Router();
 
 router.use(bodyParser.urlencoded({

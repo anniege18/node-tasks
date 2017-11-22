@@ -10,9 +10,9 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     classMethods: {
       associate: function(models) {
-        Review.belongsTo(models.Product, { foreignKey: 'productId', targetKey: 'id' });
       }
     }
   });
+
   return Review;
 };

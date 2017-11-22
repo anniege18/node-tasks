@@ -15,9 +15,13 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     classMethods: {
       associate: function(models) {
-          Product.hasMany(models.Review, { foreignKey: 'productId', sourceKey: 'id' });
       }
     }
   });
+
+  Product.associate = ({Review}) => {
+      Product.hasMany(Review, { foreignKey: 'productId', sourceKey: 'id' });
+  };
+
   return Product;
 };
