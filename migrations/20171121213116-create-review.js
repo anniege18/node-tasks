@@ -1,5 +1,5 @@
 'use strict';
-const reviews = require('../routes/json/reviews.json');
+const reviews = require('../data/json/reviews.json');
 
 module.exports = {
   up: (queryInterface, Sequelize) => {

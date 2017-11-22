@@ -1,5 +1,5 @@
 'use strict';
-const users = require('../routes/json/users.json');
+const users = require('../data/json/users.json');
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
