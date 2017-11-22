@@ -3,11 +3,15 @@ import bodyParser from 'body-parser';
 import { awaitTo } from '../helpers';
 import db from '../models';
 
+db['Product'].hasMany(db['Review'], { foreignKey: 'productId', sourceKey: 'id'});
+db['Review'].belongsTo(db['Product'], { foreignKey: 'productId', targetKey: 'id'});
+
 const router = express.Router();
 
 router.use(bodyParser.urlencoded({
     extended: true
 }));
+
 router.use(bodyParser.json());
 
 router.use((req, res, next) => {
@@ -19,7 +23,6 @@ router.use((req, res, next) => {
 
 // get all products
 router.get('/products', async (req, res) => {
-
     const [err, products] = await awaitTo(db['Product'].findAll({raw:true}));
 
     if (err) {
@@ -82,25 +85,29 @@ router.get('/products/:id([0-9]+)', async (req, res) => {
     res.status(200).json(product);
 });
 
+
+// get reviews of particular product
 router.get('/products/:id([0-9]+)/reviews', async (req, res) => {
-    const [err, data] = await awaitTo(db['Product'].findAll({
-        include: [{ model: db['Review'], as: 'children' }]
+
+    const [err, data] = await awaitTo(db['Product'].findOne({
+        where: {
+            id: req.params.id
+        },
+        include: [{ model: db['Review'] }]
     }));
 
-    console.log(err);
-    console.log(data);
-    // if (err) res.status(404).json({ error: 'Products file not found' });
-    //
-    // const products = JSON.parse(data);
-    // const filteredProducts = products.filter(product => product.id === Number(req.params.id));
-    //
-    // if (!filteredProducts.length) {
-    //     res.status(404).json({ error: 'Product not found' });
-    // } else if (!filteredProducts[0]['reviews']) {
-    //     res.status(404).json({ error: 'Product reviews not found' });
-    // } else {
-    //     res.status(200).send(filteredProducts[0]['reviews']);
-    // }
+    if (err) {
+        res.sendStatus(500);
+        return;
+    }
+
+    if (!data['Reviews'] || !data['Reviews'].length) {
+        res.status(404).json({ error: 'Reviews not found' });
+        return;
+    }
+
+    res.type('json');
+    res.status(200).json(data['Reviews']);
 });
 
 
