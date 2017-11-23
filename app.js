@@ -12,7 +12,7 @@ app.use(queryParser);
 app.get('/', (req, res)=>{
     res.send('Hello world!');
 });
-// app.use('/api-pass', routerPassport);
+
 app.use('/api', router);
 app.use('/db', routerDB);
 
