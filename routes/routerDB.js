@@ -1,14 +1,16 @@
 import express from 'express';
-import bodyParser from 'body-parser';
 import { awaitTo } from '../helpers';
-import cities from '../models/data/cities.json';
 import models from '../models';
-
 const Cities  = models.Cities;
+
+const randomIntFromInterval = (min, max) => Math.floor(Math.random()*( max - min + 1) + min);
+
+const router = express.Router();
 
 import { MongoClient } from 'mongodb';
 const url = 'mongodb://localhost:27017/test';
 
+// insert cities into DB from json
 MongoClient.connect(url, async (err, db) => {
     if (err) throw err;
     try {
@@ -17,38 +19,54 @@ MongoClient.connect(url, async (err, db) => {
         if (error) throw error;
         const [err, res] = await awaitTo(db.collection('city').insertMany(cities));
         if (err) throw err;
-        console.info(`Into DB was inserted ${res.insertedCount} docs`);
+        console.info(`Into database was inserted ${res.insertedCount} docs`);
         db.close();
     } catch(error) {
         console.error('Error: ', error);
     }
 });
 
-const router = express.Router();
+// random city with mongo native implementation
+router.get('/cities-mongo', async (req, res) => {
+    const [err, db] = await awaitTo(MongoClient.connect(url));
 
-router.use(bodyParser.urlencoded({
-    extended: true
-}));
-router.use(bodyParser.json());
+    if (err) {
+        res.sendStatus(500);
+        return;
+    }
+    const [error, count] = await awaitTo(db.collection('city').find({}).count());
 
-router.get('/cities', (req, res) => {
-    MongoClient.connect(url, async (err, db) => {
-        const count = await db.collection('city').find({}).count();
-        const randomCount = randomIntFromInterval(0, count-1);
-        const city = db.collection('city').find({ index: randomCount });
-        city.forEach(item => {
-            res.json(item);
-        });
-    });
+    if (error) {
+        res.status(404).send('Cities not found');
+        return;
+    }
+    const randomCount = randomIntFromInterval(0, count-1);
+    const [er, city] = await awaitTo(db.collection('city').findOne({ index: randomCount }));
+
+    if (er) {
+        res.status(404).send(`Cities with index ${randomCount} not found`);
+        return;
+    }
+    res.json(city);
 });
 
-router.get('/city', async (req, res) => {
-    const count = await Cities.countCities();
+// random city with mongoose native implementation
+router.get('/cities-mongoose', async (req, res) => {
+    const [error, count] = await awaitTo(Cities.countCities());
+
+    if (error) {
+        res.status(404).send('Cities not found');
+        return;
+    }
     const randomCount = randomIntFromInterval(0, count-1);
-    const city = await Cities.findCity(randomCount);
-    city.forEach(item => {
-        res.json(item);
-    });
+    const [err, city] = await awaitTo(Cities.findCity(randomCount));
+
+    if (err) {
+        res.status(404).send(`Cities with index ${randomCount} not found`);
+        return;
+    }
+
+    res.json(city);
 });
 
 router.get('*', (req, res) => {
@@ -56,8 +74,3 @@ router.get('*', (req, res) => {
 });
 
 export default router;
-
-function randomIntFromInterval(min,max)
-{
-    return Math.floor(Math.random()*(max-min+1)+min);
-}

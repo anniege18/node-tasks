@@ -21,6 +21,13 @@ CitiesSchema.pre('findOneAndUpdate', function(next) {
     next();
 });
 
+const cb = (err, result) => {
+    if (err) {
+        console.error(err);
+        return;
+    }
+    console.info(`Cities were successfully added in qty ${result.insertedCount}`);
+};
 
 class Cities {
     constructor() {
@@ -33,7 +40,7 @@ class Cities {
     }
 
     findCity(index) {
-        return this.model.find({ index });
+        return this.model.findOne({ index });
     }
 
     countCities() {
