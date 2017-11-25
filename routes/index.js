@@ -1,7 +1,7 @@
 import router from './router';
-import routerDB from './routerDB';
+import routerCities from './routerCities';
 
 export {
     router,
-    routerDB,
+    routerCities,
 };

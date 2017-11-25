@@ -1,8 +1,8 @@
 import express from 'express';
-import { router, routerDB } from './routes';
+import { router, routerCities } from './routes';
 import cookieParser from './middlewares/parse-cookie';
 import queryParser from './middlewares/parse-query';
-import './utils';
+import './utils/loadData';
 
 const app = express();
 
@@ -14,6 +14,6 @@ app.get('/', (req, res)=>{
 });
 
 app.use('/api', router);
-app.use('/db', routerDB);
+app.use('/db', routerCities);
 
 export default app;

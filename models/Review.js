@@ -25,7 +25,7 @@ class Review {
         return this.model;
     }
 
-    async loadReviews(reviews) {
+    async load(reviews) {
         await this.model.collection.drop();
         this.model.collection.insert(reviews, cb);
     }

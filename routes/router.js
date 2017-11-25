@@ -12,9 +12,16 @@ const CityModel = models.Cities.getModel();
 
 router.get('/products', async (req, res) => {
     const [err, products] = await awaitTo(ProductModel.find());
-    if (err) res.status(404).json({ error: 'Products file not found' });
+    if (err) {
+        res.sendStatus(500);
+        return;
+    }
 
-    if (!products.length) res.status(404).json({ error: 'Products not found' });
+    if (!products.length) {
+        res.status(404).json({ error: 'Products not found' });
+        return;
+    }
+
     res.type('json');
     res.status(200).json({ products });
 });
@@ -26,28 +33,43 @@ router.post('/products', async (req, res) => {
         return;
     }
 
-    if (!product) {
-        res.status(404).json({error: 'Products not found'});
+    if (Object.keys(req.body).length === 0 && req.body.constructor === Object) {
+        res.sendStatus(400);
+        return;
     }
 
+    const { name, brand, company, price, isbn } = req.body;
+
     const newProduct = new ProductModel({
-        index: product.index + 1,
-        name: req.body.name,
-        brand: req.body.brand,
-        company: req.body.company,
-        price: req.body.price,
-        isbn: req.body.isbn
+        index: product ? product.index + 1 : 1,
+        name,
+        brand,
+        company,
+        price,
+        isbn
     });
 
     const [error, prod] = await awaitTo(newProduct.save());
-    if (error) res.sendStatus(500);
+    if (error) {
+        res.sendStatus(500);
+        return;
+    }
 
+    res.type('json');
     res.status(200).json(prod);
 });
 
 router.get('/products/:id([0-9]+)', async (req, res) => {
     const [err, product] = await awaitTo(ProductModel.findOne({ index: req.params.id }));
-    if (err) res.status(404).json({ error: 'Products file not found' });
+    if (err) {
+        res.sendStatus(500);
+        return;
+    }
+
+    if (!product) {
+        res.status(404).json({ error: 'Product not found' });
+        return;
+    }
 
     res.type('json');
     res.status(200).json(product);
@@ -65,7 +87,9 @@ router.delete('/products/:id([0-9]+)', async (req, res) => {
 });
 
 router.get('/products/:id([0-9]+)/reviews', async (req, res) => {
-    const [err, product] = await awaitTo(ProductModel.findOne({ index: req.params.id }).populate('reviews'));
+    const [err, product] = await awaitTo(ProductModel
+      .findOne({ index: req.params.id })
+      .populate('reviews'));
 
     if (err) {
         res.sendStatus(500);
@@ -88,6 +112,7 @@ router.get('/products/:id([0-9]+)/reviews', async (req, res) => {
 
 router.get('/users', async (req, res) => {
     const [err, users] = await awaitTo(UserModel.find({}));
+
     if (err) {
         res.sendStatus(500);
         return;
@@ -117,6 +142,7 @@ router.delete('/users/:id([0-9]+)', async (req, res) => {
 // Cities
 router.get('/cities', async (req, res) => {
     const [err, cities] = await awaitTo(CityModel.find({}));
+
     if (err) {
         res.sendStatus(500);
         return;
@@ -139,16 +165,19 @@ router.post('/cities', async (req, res) => {
         return;
     }
 
-    if (!city) {
-        res.status(404).json({error: 'Cities not found'});
+    if (Object.keys(req.body).length === 0 && req.body.constructor === Object) {
+        res.sendStatus(400);
+        return;
     }
 
+    const { name, country, capital, lat, long } = req.body;
+
     const newCity = new CityModel({
-        index: city.index + 1,
-        name: req.body.name,
-        country: req.body.country,
-        capital: req.body.capital,
-        location: { lat: req.body.lat, long: req.body.long }
+        index: city ? city.index + 1 : 1,
+        name,
+        country,
+        capital,
+        location: { lat, long }
     });
 
     const [error, cityCreated] = await awaitTo(newCity.save());
@@ -163,11 +192,12 @@ router.post('/cities', async (req, res) => {
 });
 
 router.put('/cities/:id([0-9]+)', async (req, res) => {
+    const { name, country, capital, lat, long } = req.body;
     const [err, city] = await awaitTo(CityModel.findOneAndUpdate(
       {
           index: req.params.id
       },
-      { ...req.body },
+      { name, country, capital, location: { lat, long } },
       {
           new: true,
           upsert: true
@@ -178,6 +208,7 @@ router.put('/cities/:id([0-9]+)', async (req, res) => {
         return;
     }
 
+    res.type('json');
     res.status(200).json(city);
 });
 

@@ -33,7 +33,7 @@ class User {
         return this.model;
     }
 
-    async loadUsers(users) {
+    async load(users) {
         await this.model.collection.drop();
         this.model.collection.insert(users, cb);
     }

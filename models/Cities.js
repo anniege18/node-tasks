@@ -39,17 +39,12 @@ class Cities {
         return this.model;
     }
 
-    findCity(index) {
+    find(index) {
         return this.model.findOne({ index });
     }
 
-    countCities() {
+    count() {
         return this.model.count();
-    }
-
-    async loadUsers(cities) {
-        await this.model.collection.drop();
-        this.model.collection.insert(cities, cb);
     }
 }
 

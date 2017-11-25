@@ -44,7 +44,7 @@ class Product {
         return this.model;
     }
 
-    async loadProducts(products) {
+    async load(products) {
         await this.model.collection.drop();
         this.model.collection.insert(products, cb);
     }
